@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/item.css" rel="stylesheet" type="text/css">
+    <link href="css/detailed-info.css" rel="stylesheet" type="text/css">
+    <link href="css/frame.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+
+    <title>Popcorn Time - Dev UI</title>
+</head>
+
+<body>
+    <div class="background">
+        <div id="header">
+
+            <div class="background-blur"></div>
+            <div class="close"></div>
+
+            <div class="max"></div>
+
+            <div class="min"></div>
+            <div class="max-max"></div>
+
+            <div class="title">
+                Popcorn&nbsp;Time
+            </div>
+
+            <div class="movies">
+                Movies
+            </div>
+
+            <div class="selected"></div>
+
+            <div class="tv-series">
+                TV&nbsp;Series
+            </div>
+
+            <div class="genre">
+                Genre&nbsp;&nbsp;
+                <a href="javascript:;" style="color:#2d75df; text-decoration: none;">All</a>
+            </div>
+
+            <div class="genre-sort"></div>
+
+            <div class="sort-by">
+                Sort&nbsp;By&nbsp;&nbsp;
+                <a href="javascript:;" style="color:#2d75df; text-decoration: none;">Popularity</a>
+            </div>
+
+            <div class="genre-sort"></div>
+
+            <div class="settings"></div>
+            <div class="queue"></div>
+            <div class="favorites"></div>
+
+            <form class="SearchField">
+                <input type="search" placeholder="Search">
+            </form>
+
+        </div>
+
+
+        <div id="item-container">
+
+            <div id="overlay" class="black-overlay"></div>
+            <div id="item-detail">
+
+                <div class="item-cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/180757.jpg?1);">
+
+                </div>
+                <div class="close" onclick="hideElm('overlay');  hideElm('item-detail');"></div>
+
+                <div class="item-title">Gravity</div>
+                <div class="item-year">2013</div>
+                <div class="dot"></div>
+                <div class="item-runtime">91 min</div>
+                <div class="dot"></div>
+
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star null"></div>
+                <div class="health-icon Excellent"></div>
+
+                <div class="item-overview">Dr. Ryan Stone (Sandra Bullock), is a brilliant medical engineer on her first Shuttle mission, with veteran astronaut Matt Kowalsky (George Clooney) in command of his last flight before retiring. But on a seemingly routine spacewalk, disaster strikes. The shuttle is destroyed, leaving Stone and Kowalsky completely alone - tethered to nothing but each other and spiraling out into the blackness. The deafening silence tells them they have lost any link to Earth.</div>
+                <div id="btn-watch">
+                    <div class="watch-now">Watch Now</div>
+                </div>
+
+                <div class="q720">720</div>
+
+
+                <div class="q1080">1080</div>
+                <div class="quality switch white">
+                    <input type="radio" name="switch" id="switch-off" checked>
+                    <input type="radio" name="switch" id="switch-on">
+
+                    <span class="toggle"></span>
+                </div>
+
+                <div class="flag first NA"></div>
+                <div class="flag italian"></div>
+                <div class="flag dutch"></div>
+                <div class="flag english"></div>
+                <div class="flag romanian"></div>
+                <div class="flag turkish"></div>
+                <div class="flag bosnian"></div>
+
+
+            </div>
+
+
+
+
+
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/209707.jpg?4);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    The Wolf Of Wall Street
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/219247.jpg?1);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    Lone Survivor
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/211228.jpg?2);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    Last Vegas
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/212706.jpg?2);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    Saving Mr. Banks
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/208694.jpg?3);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    12 Years a Slave
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/201136.jpg?2);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    Escape Plan
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/214699.jpg?1);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    The Secret Life of Walter Mitty
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/211679.jpg?2);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    Dallas Buyers Club
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/179435.jpg?6);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    The Avengers
+                </div>
+
+                <div class="year">
+                    2012
+                </div>
+            </div>
+
+            <div id="item">
+                <div onclick="showElm('overlay'); showElm('item-detail');" class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/180757.jpg?1);">
+
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+
+                </div>
+
+                <div class="title">
+                    Gravity
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+
+
+
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://ia.media-imdb.com/images/M/MV5BNjU4NzYzOTY1MF5BMl5BanBnXkFtZTgwMTAyNTc1MDE@._V1_SX214_.jpg);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    Ride Along
+                </div>
+
+                <div class="year">
+                    2014
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/180744.jpg?3);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    The Hobbit: The Desolation of Smaug
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/192210.jpg?1);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    Thor: The Dark World
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+            <div id="item">
+                <div class="cover" style="background-image: url(http://zapp.trakt.us/images/posters_movies/220938.jpg?1);">
+                    <div class="itemoverlay">
+                        <div class="addtofavorites"></div>
+                        <div class="viewmoreinfo"></div>
+                        <div class="addtoqueue"></div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    The Book Thief
+                </div>
+
+                <div class="year">
+                    2013
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+<script src="js/jquery-2.1.0.min.js"></script>
+
+<script>
+    function hideElm(name) {
+          $('#' + name).fadeOut('slow');
+
+      }
+
+
+      function showElm(name) {
+          $('#' + name).fadeIn('slow');
+
+      }
+</script>
+
+</html>
