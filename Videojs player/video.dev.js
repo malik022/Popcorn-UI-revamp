@@ -4271,7 +4271,7 @@ vjs.ControlBar.prototype.options_ = {
     'fullscreenToggle': {},
     'volumeControl': {},
     'muteToggle': {}
-    // 'volumeMenuButton': {}
+    //'volumeMenuButton': {}
   }
 };
 
