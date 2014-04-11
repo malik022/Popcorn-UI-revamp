@@ -36,25 +36,20 @@ The control icons are from a custom font. Each icon corresponds to a character
 
 .vjs-default-skin .vjs-slider {
     /* Replace browser focus hightlight with handle highlight */
-
     position: relative;
     cursor: pointer;
-
     /* background-color-with-alpha */
-        background-color: #bababa;
-
+    background-color: #bababa;
 }
-
 .vjs-default-skin .vjs-slider-handle {
     position: absolute;
     /* Needed for IE6 */
-top:-3.5px;
+    top: -3.5px;
     width: 11px;
     height: 11px;
 }
 .vjs-default-skin .vjs-slider-handle:before {
     content: url('images/Marker.png');
-    
 }
 /* Control Bar
 --------------------------------------------------------------------------------
@@ -80,18 +75,10 @@ The default control bar that is a container for most of the controls.
 }
 /* Show the control bar only once the video has started playing */
 
-
-.vjs-default-skin .vjs-title-bar{
-
-}
-
-
-
-.vjs-default-skin.vjs-has-started .vjs-control-bar {
+.vjs-default-skin .vjs-title-bar {} .vjs-default-skin.vjs-has-started .vjs-control-bar {
     display: block;
     /* Visibility needed to make sure things hide in older browsers too. */
     visibility: visible;
-
     /* transition */
     -webkit-transition: visibility 0.1s, opacity 0.1s;
     -moz-transition: visibility 0.1s, opacity 0.1s;
@@ -135,12 +122,7 @@ fonts to show/hide properly.
     float: left;
     text-align: center;
     margin: 0;
-
-
-
 }
-
-
 /* Replacement for focus outline */
 
 .vjs-default-skin .vjs-control:focus:before,
@@ -175,14 +157,10 @@ fonts to show/hide properly.
     width: 11px;
     height: 14px;
     margin-left: 16px;
-    
-    
-
 }
 .vjs-default-skin .vjs-play-control:before {
     position: relative;
     content: url('images/Play.png');
-    
 }
 .vjs-default-skin.vjs-playing .vjs-play-control:before {
     content: url('images/Pause.png');
@@ -199,7 +177,6 @@ fonts to show/hide properly.
     width: 20px;
     margin-right: 10px;
 }
-
 .vjs-default-skin .vjs-mute-control:before,
 .vjs-default-skin .vjs-volume-menu-button:before {
     position: relative;
@@ -217,29 +194,20 @@ fonts to show/hide properly.
 .vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before {
     content: url('images/Sound0.png');
 }
-
-
 .vjs-default-skin .vjs-volume-control {
-    top:17px;
-width: 54px;
+    top: 17px;
+    width: 54px;
     float: right;
     margin-right: 0px;
 }
 .vjs-default-skin .vjs-volume-bar {
-
-
     height: 5px;
-width: 54px;
+    width: 54px;
     margin-right: 0px;
-
-
-    border-radius: 3px / 2px; /* border radius */
-
-
- */
-    
+    border-radius: 3px / 2px;
+    /* border radius */
+    */
 }
-
 .vjs-default-skin .vjs-volume-menu-button .vjs-menu-content {
     height: 2.9em;
 }
@@ -247,38 +215,32 @@ width: 54px;
     position: absolute;
     top: 0;
     left: 0;
-height: 5px;
+    height: 5px;
     background-color: #2d75df;
-    
     -moz-border-radius: 3px / 2px;
     -webkit-border-radius: 3px / 2px;
-    border-radius: 3px / 2px; /* border radius */
+    border-radius: 3px / 2px;
+    /* border radius */
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
-    background-clip: padding-box; 
+    background-clip: padding-box;
     /* layer fill content */
-    
 }
 .vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
-content: url('images/Marker.png');
-
+    content: url('images/Marker.png');
 }
 .vjs-default-skin .vjs-volume-handle:before {
-content: url('images/Marker.png');
-
+    content: url('images/Marker.png');
 }
-.vjs-default-skin .vjs-volume-menu-button .vjs-menu .vjs-menu-content {
-
-}
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu .vjs-menu-content {}
 /* Progress
 --------------------------------------------------------------------------------
 */
 
 .vjs-default-skin .vjs-progress-control {
     position: relative;
-
     /* Set above the rest of the controls. */
-    top:17px;
+    top: 17px;
     width: calc(100% - 320px);
     height: 5px;
     float: left;
@@ -290,8 +252,7 @@ content: url('images/Marker.png');
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     /* prevents bg color from leaking outside the border */
-    
-        margin-left: 28px;
+    margin-left: 28px;
 }
 /* On hover, make the progress bar grow to something that's more clickable.
     This simply changes the overall font for the progress bar, and this
@@ -313,7 +274,6 @@ content: url('images/Marker.png');
 /* Box containing play and load progresses. Also acts as seek scrubber. */
 
 .vjs-default-skin .vjs-progress-holder {
-
     /* layer fill content */
     height: 100%;
     -moz-border-radius: 3px / 2px;
@@ -361,8 +321,8 @@ content: url('images/Marker.png');
     /* layer fill content */
 }
 .vjs-default-skin .vjs-seek-handle {
-    width: 1.5em;
-    height: 100%;
+    width: 11px;
+    height: 11px;
 }
 .vjs-default-skin .vjs-seek-handle:before {
     padding-top: 0.1em
@@ -381,23 +341,19 @@ content: url('images/Marker.png');
     font-size: 12px;
     /* Align vertically by making the line height the same as the control bar */
     top: 12px;
-    
 }
 .vjs-default-skin .vjs-current-time {
-        position: relative;
+    position: relative;
     float: left;
     margin-left: 24px;
-
 }
 .vjs-default-skin .vjs-duration {
     position: relative;
     float: left;
-
 }
 /* Remaining time is in the HTML, but not included in default design */
 
 .vjs-default-skin .vjs-remaining-time {
-    
     display: none;
     float: left;
 }
@@ -419,7 +375,7 @@ content: url('images/Marker.png');
 
 .vjs-default-skin .vjs-fullscreen-control {
     position: relative;
-    top:10px;
+    top: 10px;
     margin-right: 15px;
     margin-left: 15px;
     cursor: pointer;
@@ -602,27 +558,22 @@ easily in the skin designer. http://designer.videojs.com/
 
 .vjs-default-skin .vjs-menu-button {
     position: relative;
-    top:12px;
-
+    top: 12px;
     float: right;
     cursor: pointer;
-        margin-right: 12px;
+    margin-right: 12px;
+    height: 16px;
+    width: 17px;
 }
 .vjs-default-skin .vjs-menu {
     display: none;
     position: absolute;
     bottom: 0;
-    left: 0em;
+    right: 1px;
     /* (Width of vjs-menu - width of button) / 2 */
-    width: 0em;
-    height: 0em;
-    margin-bottom: 3em;
-    border-left: 2em solid transparent;
-    border-right: 2em solid transparent;
-    border-top: 1.55em solid #000000;
-    /* Same width top as ul bottom */
-    border-top-color: rgba(7, 40, 50, 0.5);
-    /* Same as ul background */
+    width: 20px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 /* Button Pop-up Menu */
 
@@ -632,11 +583,12 @@ easily in the skin designer. http://designer.videojs.com/
     margin: 0;
     position: absolute;
     width: 10em;
-    bottom: 1.5em;
+    bottom: 26px;
+    ;
     /* Same bottom as vjs-menu border-top */
     max-height: 15em;
     overflow: auto;
-    left: -5em;
+    left: -40px;
     /* Width of menu - width of button / 2 */
     /* background-color-with-alpha */
     background-color: #07141e;
